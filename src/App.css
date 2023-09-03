@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  height: 100vh;
+}
+.groupImage {
+  margin-top: 72px;
+  text-align: left;
+}
+.groupImage img {
+  width: 100%;
+  box-sizing: border-box;
+  filter: brightness(50%);
+}
+.groupImage .groupText {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  z-index: 1;
+}
+.img2 {
+  display: none;
+}
+.groupImage p {
+  padding: 5;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.groupImage p:nth-child(1) {
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.groupImage p:nth-child(2) {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+a {
+  cursor: pointer;
+  color: rgba(47, 108, 229, 1);
+}
+
+.warning {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .groupImage {
+    margin-top: 0;
+  }
+  .groupImage .groupText {
+    position: absolute;
+    top: 13%;
+    left: 15%;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width:830px) {
+  .warning{
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  .groupImage .groupText {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    z-index: 1;
+  }
+  .groupImage {
+    margin-top: 0;
+  }
+  .img2 {
+    display: block;
+  }
+  .img1 {
+    display: none;
+  }
+}

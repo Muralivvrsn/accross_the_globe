@@ -1,0 +1,97 @@
+.profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.group-name {
+  margin-left: 10px;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.follow-button {
+  border-radius: 14px;
+  background: #edeef0;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.follow-button.followed {
+  background-color: black;
+  color: white;
+  border-radius: 14px;
+}
+
+.recommand {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommand img {
+  margin-right: 10px;
+}
+
+.groups {
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+.group {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-top: 30px;
+  margin-left: auto !important;
+}
+
+.nothing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nothing h2 {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+
+@media screen and (max-width:830px) {
+  .groups{
+    display: none;
+  }
+}
